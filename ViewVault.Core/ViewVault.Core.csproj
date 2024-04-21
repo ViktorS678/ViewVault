@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ViewVault.Infrastructure\ViewVault.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

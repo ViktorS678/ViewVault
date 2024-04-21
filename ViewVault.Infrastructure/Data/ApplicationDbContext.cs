@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace ViewVault.Data
+namespace ViewVault.Infrastructure.Data
 {
     public class ViewVaultDbContext : IdentityDbContext
     {
