@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ViewVault.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ViewVaultDbContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public ViewVaultDbContext(DbContextOptions<ViewVaultDbContext> options)
             : base(options)
         {
         }

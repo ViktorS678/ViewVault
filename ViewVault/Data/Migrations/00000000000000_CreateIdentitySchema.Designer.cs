@@ -9,7 +9,7 @@ using ViewVault.Data;
 
 namespace ViewVault.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(ViewVaultDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {
