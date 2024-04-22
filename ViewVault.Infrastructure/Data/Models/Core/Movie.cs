@@ -6,6 +6,13 @@ namespace ViewVault.Infrastructure.Data.Models.Core
 {
     public class Movie
     {
+
+        public Movie()
+        {
+            this.MovieComments = new HashSet<MovieComment>();
+        }
+
+
         public int Id { get; set; }
         [Required]
         [MaxLength(NamesMaxLength)]
@@ -20,7 +27,7 @@ namespace ViewVault.Infrastructure.Data.Models.Core
         public int RuntimeMinutes { get; set; }
 
         [Required]
-        public DateOnly ReleasedOn { get; set; }
+        public DateTime ReleasedOn { get; set; }
 
         public virtual ICollection<Rating> Ratings { get; set; }
 

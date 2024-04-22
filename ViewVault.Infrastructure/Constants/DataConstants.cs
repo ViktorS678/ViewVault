@@ -14,7 +14,7 @@
 
         //Others
 
-        public const string DateOnlyFormat = "yyyy-MM-dd";
+        public const string DateOnlyFormat = "yyyy-MM-dd";          //Movie.ReleasedOn + Actor.Birth
         public const string DateTimeFormat = "yyyy-MM-dd HH:mm:ss";
 
     }

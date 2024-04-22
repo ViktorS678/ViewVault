@@ -25,13 +25,13 @@ namespace ViewVault.Infrastructure.Data
                  .HasKey(x => new { x.MovieId, x.GenreId });
 
             builder.Entity<Rating>()
-               .HasKey(x => new { x.MovieId, x.UserId });
+                 .HasKey(x => new { x.MovieId, x.UserId });
 
 
             base.OnModelCreating(builder);
 
         }
-        
+
         public DbSet<Movie> Movies { get; set; }
 
         public DbSet<Actor> Actors { get; set; }
