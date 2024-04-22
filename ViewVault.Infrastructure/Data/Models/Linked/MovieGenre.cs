@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using ViewVault.Infrastructure.Data.Models.Core;
 
 namespace ViewVault.Infrastructure.Data.Models.Linked

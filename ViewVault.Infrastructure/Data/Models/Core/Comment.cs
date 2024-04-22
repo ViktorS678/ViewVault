@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 using ViewVault.Infrastructure.Data.Models.Linked;
+using static ViewVault.Infrastructure.Constants.DataConstants;
 
 namespace ViewVault.Infrastructure.Data.Models.Core
 {
     public class Comment
     {
         [Required]
+        [MaxLength(DescriptionsMaxLength)]
         public string Content { get; set; }
 
         public virtual ICollection<MovieComment> MovieComments { get; set; }
