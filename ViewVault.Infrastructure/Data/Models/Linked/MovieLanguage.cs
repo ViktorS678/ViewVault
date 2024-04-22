@@ -1,4 +1,4 @@
-﻿namespace ViewVault.Infrastructure.Data.Models
+﻿namespace ViewVault.Infrastructure.Data.Models.Linked
 {
     public class MovieLanguage
     {
