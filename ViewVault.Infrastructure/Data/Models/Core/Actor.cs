@@ -8,6 +8,7 @@ namespace ViewVault.Infrastructure.Data.Models.Core
         public string FullName { get; set; }
         public DateOnly Birth { get; set; }
         public ActorGender Gender { get; set; }
+        public ActorRole Role { get; set; }
         public string Biography { get; set; }
         public byte[] Photo { get; set; }
         public double Popularity { get; set; }
