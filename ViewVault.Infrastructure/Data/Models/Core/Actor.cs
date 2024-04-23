@@ -21,6 +21,5 @@ namespace ViewVault.Infrastructure.Data.Models.Core
         public byte[] Photo { get; set; }
         public double Popularity { get; set; }
 
-        public virtual ICollection<MovieActor> MovieActors { get; set; }
     }
 }

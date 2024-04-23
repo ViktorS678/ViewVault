@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using ViewVault.Infrastructure.Data.Models.Core;
+using ViewVault.Infrastructure.Data.Models.ModerationModels;
 
 namespace ViewVault.Infrastructure.Data.Models.Linked
 {
-    public class Rating
+    public class Rating : ICreate
     {
         public int MovieId { get; set; }
         [Required]
@@ -17,7 +18,14 @@ namespace ViewVault.Infrastructure.Data.Models.Linked
                 return RatingValue.ToString("0.0");
             }
         }
+
+        //Creation requirements
+        public DateTime CreatedOn { get; set; }
+        public DateTime? ModifiedOn { get; set; }
+
         public virtual Movie Movie { get; set; }
-   //     public virtual ApplicationUser User { get; set; }
+
+        //public virtual ApplicationUser User { get; set; }
+
     }
 }

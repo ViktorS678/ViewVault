@@ -10,8 +10,8 @@ namespace ViewVault.Infrastructure.Data.Models.Core
         public Movie()
         {
             this.MovieComments = new HashSet<MovieComment>();
+            this.Ratings = new HashSet<Rating>();
         }
-
 
         public int Id { get; set; }
         [Required]
@@ -32,12 +32,6 @@ namespace ViewVault.Infrastructure.Data.Models.Core
         public virtual ICollection<Rating> Ratings { get; set; }
 
         public virtual ICollection<MovieComment> MovieComments { get; set; }
-
-        public virtual ICollection<MovieGenre> MovieGenres { get; set; }
-
-        public virtual ICollection<MovieLanguage> MovieLanguages { get; set; }
-
-        public virtual ICollection<MovieActor> MovieActors { get; set; }
 
     }
 }

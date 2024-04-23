@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using ViewVault.Infrastructure.Data.Models.Linked;
+using ViewVault.Infrastructure.Data.Models.ModerationModels;
 using static ViewVault.Infrastructure.Constants.DataConstants;
 
 namespace ViewVault.Infrastructure.Data.Models.Core
 {
-    public class Comment
+    public class Comment : BaseDelete<int>
     {
         public Comment()
         {
