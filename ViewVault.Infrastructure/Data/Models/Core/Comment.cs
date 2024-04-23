@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ViewVault.Infrastructure.Data.Common.Moderation;
 using ViewVault.Infrastructure.Data.Models.Linked;
-using ViewVault.Infrastructure.Data.Models.Moderation;
 using static ViewVault.Infrastructure.Constants.DataConstants;
 
 namespace ViewVault.Infrastructure.Data.Models.Core

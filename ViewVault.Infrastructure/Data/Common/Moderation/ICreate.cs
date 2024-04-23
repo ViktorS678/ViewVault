@@ -1,4 +1,4 @@
-﻿namespace ViewVault.Infrastructure.Data.Models.Moderation
+﻿namespace ViewVault.Infrastructure.Data.Common.Moderation
 {
     public interface ICreate
     {
