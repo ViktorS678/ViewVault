@@ -6,6 +6,10 @@ namespace ViewVault.Infrastructure.Data.Models.Core
 {
     public class Comment
     {
+        public Comment()
+        {
+            this.MovieComments = new HashSet<MovieComment>();
+        }
 
         [Required]
         [MaxLength(DescriptionsMaxLength)]
