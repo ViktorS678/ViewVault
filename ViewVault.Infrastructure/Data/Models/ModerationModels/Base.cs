@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ViewVault.Infrastructure.Data.Models.ModerationModels
 {
@@ -15,6 +10,6 @@ namespace ViewVault.Infrastructure.Data.Models.ModerationModels
 
         public DateTime CreatedOn { get; set; }
 
-        public DateTime ModifiedOn { get; set; }
+        public DateTime? ModifiedOn { get; set; }
     }
 }
