@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ViewVault.Infrastructure.Data.Models.Core;
 using ViewVault.Infrastructure.Data.Models.Linked;
 
-namespace ViewVault.Infrastructure.Data
+namespace ViewVault.Infrastructure.Data.Context
 {
     public class ViewVaultDbContext : IdentityDbContext
     {

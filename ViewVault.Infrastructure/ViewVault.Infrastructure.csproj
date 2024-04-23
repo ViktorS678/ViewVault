@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Models\Repositories\" />
+    <Folder Include="Data\Context\Configurations\" />
+    <Folder Include="Data\Context\Seeding\" />
   </ItemGroup>
 
 </Project>

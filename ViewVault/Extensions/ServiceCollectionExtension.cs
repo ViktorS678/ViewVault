@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using ViewVault.Infrastructure.Data;
+using ViewVault.Infrastructure.Data.Context;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
