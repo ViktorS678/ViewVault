@@ -6,8 +6,10 @@ namespace ViewVault.Infrastructure.Data.Models.Core
 {
     public class Comment
     {
+
         [Required]
         [MaxLength(DescriptionsMaxLength)]
+        [MinLength(DescriptionsMinLength)]
         public string Content { get; set; }
 
         public virtual ICollection<MovieComment> MovieComments { get; set; }

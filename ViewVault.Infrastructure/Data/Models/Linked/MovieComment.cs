@@ -8,7 +8,7 @@ namespace ViewVault.Infrastructure.Data.Models.Linked
         public int MovieId { get; set; }
         [Required]
         public string UserId { get; set; }
-        public int CommentId { get; set; }
+        public int? CommentId { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime DeletedOn { get; set; }
         public DateTime CreatedOn { get; set; }
@@ -16,6 +16,7 @@ namespace ViewVault.Infrastructure.Data.Models.Linked
 
         public virtual Movie Movie { get; set; }
         public virtual Comment Comment { get; set; }
+
       //  public virtual ApplicationUser User { get; set; }
     }
 }
