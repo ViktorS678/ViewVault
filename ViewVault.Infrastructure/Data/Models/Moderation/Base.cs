@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ViewVault.Infrastructure.Data.Models.ModerationModels
+namespace ViewVault.Infrastructure.Data.Models.Moderation
 {
     public abstract class Base<TKey> : ICreate
 

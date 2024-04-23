@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using ViewVault.Infrastructure.Data.Models.Core;
-using ViewVault.Infrastructure.Data.Models.ModerationModels;
+using ViewVault.Infrastructure.Data.Models.Moderation;
 
 namespace ViewVault.Infrastructure.Data.Models.Linked
 {

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ViewVault.Infrastructure.Data;
 
@@ -11,9 +12,10 @@ using ViewVault.Infrastructure.Data;
 namespace ViewVault.Infrastructure.Migrations
 {
     [DbContext(typeof(ViewVaultDbContext))]
-    partial class ViewVaultDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240423223919_MainTablesAdded")]
+    partial class MainTablesAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

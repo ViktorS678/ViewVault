@@ -1,4 +1,4 @@
-﻿namespace ViewVault.Infrastructure.Data.Models.ModerationModels
+﻿namespace ViewVault.Infrastructure.Data.Models.Moderation
 {
     public abstract class BaseDelete<TKey> : Base<TKey>, IDelete
     {

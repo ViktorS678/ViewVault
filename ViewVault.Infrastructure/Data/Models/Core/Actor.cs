@@ -10,6 +10,7 @@ namespace ViewVault.Infrastructure.Data.Models.Core
 
         [Required]
         [MaxLength(NamesMaxLength)]
+        [MinLength(NamesMinLength)]
         public string FullName { get; set; }
         public DateTime Birth { get; set; }
         public ActorGender Gender { get; set; }
