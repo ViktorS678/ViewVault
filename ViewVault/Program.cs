@@ -27,7 +27,7 @@ static void ConfigureServices(IServiceCollection services, IConfiguration config
         options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
     services.AddDefaultIdentity<User>(IdentityOptionsGet.GetIdentityOptions)
-        .AddRoles<ViewVaultDbContext>().AddEntityFrameworkStores<ViewVaultDbContext>();
+        .AddRoles<UserRole>().AddEntityFrameworkStores<ViewVaultDbContext>();
 
     services.Configure<CookiePolicyOptions>(
         options =>
@@ -42,11 +42,17 @@ static void ConfigureServices(IServiceCollection services, IConfiguration config
             options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
         });
 
+    services.AddAntiforgery(options =>
+    {
+        options.HeaderName = "X-CSRF-TOKEN";
+    });
+
 
     services.AddRazorPages();
     services.AddDatabaseDeveloperPageExceptionFilter();
 
     services.AddSingleton(configuration);
+    services.AddHttpClient();
 
     services.AddScoped(typeof(IDeleteRepository<>), typeof(EfDeleteRepository<>));
     services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
