@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <Folder Include="Data\Context\Configurations\" />
-    <Folder Include="Data\Context\Seeding\" />
   </ItemGroup>
 
 </Project>

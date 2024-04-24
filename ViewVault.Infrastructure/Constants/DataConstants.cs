@@ -12,10 +12,16 @@
         public const int DescriptionsMinLength = 1;
         public const int DescriptionsMaxLength = 300;
 
-        //Others
+        //Date Formats
 
         public const string DateOnlyFormat = "yyyy-MM-dd";          //Movie.ReleasedOn + Actor.Birth
         public const string DateTimeFormat = "yyyy-MM-dd HH:mm:ss";
+
+        //User role names
+
+        public const string ModeratorRoleName = "Moderator";
+
+        public const string UserRoleName = "User";
 
     }
 }
