@@ -45,7 +45,7 @@ namespace ViewVault.Infrastructure.Data.Context
 
         public DbSet<MovieGenre> MoviesGenres { get; set; }
 
-        public DbSet<MovieComment> MovieComments { get; set; }
+        public DbSet<MovieComment> MoviesComments { get; set; }
 
         public DbSet<Rating> Ratings { get; set; }
 
