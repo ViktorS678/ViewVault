@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using ViewVault.Infrastructure.Data.Common.Moderation;
 using ViewVault.Infrastructure.Data.Models.Core;
+using ViewVault.Infrastructure.Data.Models.User;
 
 namespace ViewVault.Infrastructure.Data.Models.Linked
 {
@@ -24,8 +25,7 @@ namespace ViewVault.Infrastructure.Data.Models.Linked
         public DateTime? ModifiedOn { get; set; }
 
         public virtual Movie Movie { get; set; }
-
-        //public virtual ApplicationUser User { get; set; }
+        public virtual User.User User { get; set; }
 
     }
 }

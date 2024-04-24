@@ -13,15 +13,15 @@ namespace ViewVault.Infrastructure.Data.Models.Linked
         public DateTime CreatedOn { get; set; }
         public DateTime ModifiedOn { get; set; }
 
-        public virtual Movie Movie { get; set; }
-        public virtual Comment Comment { get; set; }
-
-        //  public virtual ApplicationUser User { get; set; }
-
 
         //Deletion Requirements
         public bool IsDeleted { get; set; }
         public DateTime? DeletedOn { get; set; }
+
+
+        public virtual Movie Movie { get; set; }
+        public virtual Comment Comment { get; set; }
+        public virtual User.User User { get; set; }
 
     }
 }
