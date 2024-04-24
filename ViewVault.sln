@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewVault", "ViewVault\ViewVault.csproj", "{B35EEA58-9C23-4DDD-B8AE-562352780124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewVault", "ViewVault\ViewVault.csproj", "{B35EEA58-9C23-4DDD-B8AE-562352780124}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewVault.Core", "ViewVault.Core\ViewVault.Core.csproj", "{CB57077D-303E-4191-8F74-B6D765E6B50D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewVault.Core", "ViewVault.Core\ViewVault.Core.csproj", "{CB57077D-303E-4191-8F74-B6D765E6B50D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewVault.Infrastructure", "ViewVault.Infrastructure\ViewVault.Infrastructure.csproj", "{EEF46278-B656-4764-8F4C-EA8EFA5082BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewVault.Infrastructure", "ViewVault.Infrastructure\ViewVault.Infrastructure.csproj", "{EEF46278-B656-4764-8F4C-EA8EFA5082BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewVault.Web", "ViewVault.Web\ViewVault.Web.csproj", "{DA8569CD-799F-4F8E-81C9-D9B37721720A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{EEF46278-B656-4764-8F4C-EA8EFA5082BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEF46278-B656-4764-8F4C-EA8EFA5082BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEF46278-B656-4764-8F4C-EA8EFA5082BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8569CD-799F-4F8E-81C9-D9B37721720A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8569CD-799F-4F8E-81C9-D9B37721720A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8569CD-799F-4F8E-81C9-D9B37721720A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8569CD-799F-4F8E-81C9-D9B37721720A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

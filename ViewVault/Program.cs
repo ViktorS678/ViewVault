@@ -6,10 +6,18 @@ using ViewVault.Infrastructure.Data.Context.Extensions;
 using ViewVault.Infrastructure.Data.Context.Repositories;
 using ViewVault.Infrastructure.Data.Context.Seeding;
 using ViewVault.Infrastructure.Data.Models.User;
+using Microsoft.AspNetCore.Identity;
 
 
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("ViewVaultDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ViewVaultDbContextConnection' not found.");
+
+builder.Services.AddDbContext<ViewVaultDbContext>(options =>
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ViewVaultDbContext>();
 
 ConfigureServices(builder.Services, builder.Configuration);
 

@@ -25,4 +25,9 @@
     <ProjectReference Include="..\ViewVault.Infrastructure\ViewVault.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Tests\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>
