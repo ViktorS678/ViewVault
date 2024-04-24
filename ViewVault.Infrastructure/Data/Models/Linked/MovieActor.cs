@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ViewVault.Infrastructure.Data.Common.Moderation;
 using ViewVault.Infrastructure.Data.Models.Core;
 
 namespace ViewVault.Infrastructure.Data.Models.Linked
 {
-    public class MovieActor
+    public class MovieActor : IDelete
     {
         public int MovieId { get; set; }
 
@@ -18,5 +19,9 @@ namespace ViewVault.Infrastructure.Data.Models.Linked
 
         [Required]
         public string MovieCharacter { get; set; }
+
+        public bool IsDeleted { get; set; }
+
+        public DateTime? DeletedOn { get; set; }
     }
 }

@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using ViewVault.Infrastructure.Data.Common.Moderation;
 using ViewVault.Infrastructure.Data.Models.Core;
 
 namespace ViewVault.Infrastructure.Data.Models.Linked
 {
-    public class MovieLanguage
+    public class MovieLanguage : IDelete
     {
         public int MovieId { get; set; }
 
@@ -14,5 +15,9 @@ namespace ViewVault.Infrastructure.Data.Models.Linked
 
         [ForeignKey(nameof(LanguageId))]
         public Language Language { get; set; }
+
+        public bool IsDeleted { get; set; }
+
+        public DateTime? DeletedOn { get; set; }
     }
 }

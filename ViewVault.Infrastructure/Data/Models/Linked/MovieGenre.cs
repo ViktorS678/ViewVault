@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using ViewVault.Infrastructure.Data.Common.Moderation;
 using ViewVault.Infrastructure.Data.Models.Core;
 
 namespace ViewVault.Infrastructure.Data.Models.Linked
 {
-    public class MovieGenre
+    public class MovieGenre : IDelete
     {
         public int MovieId { get; set; }
 
@@ -13,6 +14,10 @@ namespace ViewVault.Infrastructure.Data.Models.Linked
         public int GenreId { get; set; }
 
         [ForeignKey(nameof(GenreId))]
-        public Genre Genre { get; set; } = null!;
+        public virtual Genre Genre { get; set; }
+
+        public bool IsDeleted { get; set; }
+
+        public DateTime? DeletedOn { get; set; }
     }
 }

@@ -1,12 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ViewVault.Infrastructure.Data.Common.Moderation;
 using ViewVault.Infrastructure.Data.Models.Linked;
 using static ViewVault.Infrastructure.Constants.DataConstants;
 
 namespace ViewVault.Infrastructure.Data.Models.Core
 {
-    public class Language
+    public class Language : BaseDelete<int>
     {
-        public int Id { get; set; }
+        public Language()
+        {
+            this.MovieLanguages = new HashSet<MovieLanguage>();
+        }
+
         [Required]
         [MaxLength(NamesMaxLength)]
         [MinLength(NamesMinLength)]

@@ -1,12 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ViewVault.Infrastructure.Data.Common.Moderation;
 using ViewVault.Infrastructure.Data.Models.Linked;
 using static ViewVault.Infrastructure.Constants.DataConstants;
 
 namespace ViewVault.Infrastructure.Data.Models.Core
 {
-    public class Actor
+    public class Actor : BaseDelete<int>
     {
-        public int Id { get; set; }
+
+        public Actor()
+        {
+            this.Movies = new HashSet<MovieActor>();
+        }
 
         [Required]
         [MaxLength(NamesMaxLength)]
@@ -19,8 +24,10 @@ namespace ViewVault.Infrastructure.Data.Models.Core
         [Required]
         [MaxLength(DescriptionsMaxLength)]
         public string Biography { get; set; }
-        public byte[] Photo { get; set; }
+        public string PhotoUrl { get; set; }
         public double Popularity { get; set; }
+
+        public virtual ICollection<MovieActor> Movies { get; set; }
 
     }
 }
